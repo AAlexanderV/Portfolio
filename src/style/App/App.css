@@ -1,0 +1,193 @@
+.App {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+}
+.App .intro {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #737373;
+  width: 100%;
+  height: 100vh;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+}
+.App .intro .header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 10px;
+  margin-top: 25px;
+}
+.App .intro .header nav {
+  position: relative;
+  width: 50%;
+  min-width: 400px;
+  max-width: 900px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.App .intro .header nav a {
+  position: relative;
+  margin: 15px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
+  transition: all 0.2s linear;
+}
+.App .intro .header nav a:hover {
+  color: rgb(225, 225, 66);
+}
+.App .intro .header nav a::after {
+  content: "";
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 3px;
+  background-color: rgb(225, 225, 66);
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  transition: all 0.5s linear;
+}
+.App .intro .header nav a:hover::after {
+  display: block;
+}
+.App .intro .header nav::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  top: 50%;
+  right: 125%;
+  z-index: 1;
+}
+.App .intro .about {
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.App .intro .about .avatar {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  padding: 10px;
+  overflow: hidden;
+}
+.App .intro .about .avatar img {
+  width: 90%;
+  max-width: 600px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px rgb(208, 208, 208);
+}
+.App .intro .about .about_contentBox {
+  position: relative;
+  width: 60%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 40px;
+}
+.App .intro .about .about_contentBox header {
+  font-weight: 700;
+  font-size: 35px;
+}
+.App .intro .about .about_contentBox .about_text {
+  width: 85%;
+}
+.App .intro .about .about_contentBox .about_text p {
+  margin: 20px 0;
+  width: 100%;
+  font-weight: 300;
+  font-size: 22px;
+  text-align: justify;
+}
+.App .intro .about .about_contentBox .about_text p span {
+  font-weight: 400;
+  color: rgb(225, 225, 66);
+}
+.App .intro::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40%;
+  height: 3px;
+  background-color: #fff;
+  bottom: 100px;
+  left: 60%;
+  z-index: 1;
+}
+.App .skills {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(241, 241, 241);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.App .skills header {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+.App .skills .skills_content {
+  display: flex;
+  flex-direction: column;
+}
+.App .skills .skills_content .skills_box {
+  display: flex;
+  flex-direction: column;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.App .skills .skills_content .skills_box h2 {
+  font-size: 22px;
+  margin: 20px 10px 5px 40px;
+}
+.App .skills .skills_content .skills_box ul {
+  max-width: 900px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 10px;
+  padding: 10px;
+}
+.App .skills .skills_content .skills_box ul li {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  list-style-type: none;
+  padding: 10px;
+  margin: 10px;
+}
+.App .skills .skills_content .skills_box ul li img {
+  max-width: 120px;
+  height: 120px;
+}
+.App .skills .skills_content .skills_box ul li p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+}
+.App .portfolio {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(241, 241, 241);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=App.css.map */
