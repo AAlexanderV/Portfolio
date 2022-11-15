@@ -23,27 +23,26 @@ export default function About() {
                         a <span>"front-end developer"</span>.
                     </p>
                     <p>
-                        My journey in programming began in the spring of 2021,
-                        when I became interested in the topic of programming and
-                        computer science in general, and I got "hooked" on
-                        YouTube videos on this topic from various amateurs and
-                        professionals in this field. I didn't think about web
-                        development then. Later, I came across a free course on
-                        "Introduction to Computer Science" from Harvard
-                        University's CS50x and decided to try it out of
-                        curiosity.
+                        My journey in programming began in spring 2021, when I
+                        got interested in the topic of programming and computer
+                        science in general, and I got "hooked" on YouTube videos
+                        on this topic from various amateurs and professionals in
+                        this field. I didn't think about web development then.
+                        Later, I came across a free course on "Introduction to
+                        Computer Science" from Harvard University's CS50x and
+                        decided to try it out of curiosity.
                     </p>
                     <p>
                         So, from "Scratch" and C, I went to HTML/CSS and... at
                         first I did not like them as much as C. A little later,
-                        I <span>discovered JS</span>, which turned out to be
-                        very similar to C (comparing with python and html/css),
-                        but much simpler and more functional, after which{" "}
+                        I <span>discovered JS</span>. It turned out to be very
+                        similar to C (comparing with python and html/css), but
+                        much simpler and more functional. As a result,{" "}
                         <span>
                             I really liked web development and decided to stay
                             in this area
                         </span>
-                        , to which I have dedicated myself to for the last 9
+                        , to which I have dedicated myself for the last 9
                         months.
                     </p>
                 </div>

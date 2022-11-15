@@ -14,7 +14,7 @@ export default function Skills() {
             className="skills"
             id="skills"
         >
-            <header>SKILLS</header>
+            <header className="section_header">SKILLS</header>
             <main className="skills_content">
                 <div className="skills_box">
                     <h2>Programming languages:</h2>
