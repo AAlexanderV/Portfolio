@@ -365,6 +365,7 @@ $background_2: rgb(241, 241, 241);
         //INTRO
         .intro {
             .about {
+                top: 27%;
                 .avatar {
                     width: 35%;
                     img {
@@ -375,6 +376,7 @@ $background_2: rgb(241, 241, 241);
                 }
                 .about_contentBox {
                     padding-right: 25px;
+                    width: 65%;
                     header {
                         font-weight: 700;
                         font-size: 30px;
@@ -421,5 +423,92 @@ $background_2: rgb(241, 241, 241);
                 }
             }
         }
+    }
+}
+
+@media (max-width: 1300px) {
+    .App {
+        //INTRO
+        .intro {
+            .header {
+                nav {
+                    a {
+                        font-size: 20px;
+                    }
+                }
+            }
+            .about {
+                .avatar {
+                    img {
+                        width: 95%;
+                        width: 320px;
+                        height: 320px;
+                    }
+                }
+                .about_contentBox {
+                    padding-right: 15px;
+                    header {
+                        font-size: 26px;
+                    }
+                    .about_text {
+                        width: 90%;
+                        p {
+                            margin: 13px 0;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+        // PORTFOLIO
+        .portfolio {
+            .porfolio_content {
+                margin: 10px;
+                .portfolio_item {
+                    .name {
+                        header {
+                            font-size: 25px;
+                        }
+                        a {
+                            max-width: 300px;
+                            img {
+                                max-width: 300px;
+                            }
+                        }
+                    }
+                    .details {
+                        p {
+                            font-size: 18px;
+                        }
+                        .used_technologies {
+                            font-size: 16px;
+                        }
+                        .links {
+                            a {
+                                padding: 12px 32px;
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // CONTACTS
+        .contacts {
+            main {
+                .contacts_item {
+                    a {
+                        font-size: 18px;
+                    }
+                    img {
+                        width: 45px;
+                    }
+                }
+            }
+        }
+    }
+    .section_header {
+        font-size: 30px;
+        margin-bottom: 35px;
     }
 }

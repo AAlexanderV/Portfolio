@@ -344,6 +344,9 @@
 }
 
 @media (max-width: 1600px) {
+  .App .intro .about {
+    top: 27%;
+  }
   .App .intro .about .avatar {
     width: 35%;
   }
@@ -354,6 +357,7 @@
   }
   .App .intro .about .about_contentBox {
     padding-right: 25px;
+    width: 65%;
   }
   .App .intro .about .about_contentBox header {
     font-weight: 700;
@@ -384,5 +388,60 @@
   .App .portfolio .porfolio_content .portfolio_item .details .links a {
     padding: 12px 32px;
     font-size: 20px;
+  }
+}
+@media (max-width: 1300px) {
+  .App .intro .header nav a {
+    font-size: 20px;
+  }
+  .App .intro .about .avatar img {
+    width: 95%;
+    width: 320px;
+    height: 320px;
+  }
+  .App .intro .about .about_contentBox {
+    padding-right: 15px;
+  }
+  .App .intro .about .about_contentBox header {
+    font-size: 26px;
+  }
+  .App .intro .about .about_contentBox .about_text {
+    width: 90%;
+  }
+  .App .intro .about .about_contentBox .about_text p {
+    margin: 13px 0;
+    font-size: 16px;
+  }
+  .App .portfolio .porfolio_content {
+    margin: 10px;
+  }
+  .App .portfolio .porfolio_content .portfolio_item .name header {
+    font-size: 25px;
+  }
+  .App .portfolio .porfolio_content .portfolio_item .name a {
+    max-width: 300px;
+  }
+  .App .portfolio .porfolio_content .portfolio_item .name a img {
+    max-width: 300px;
+  }
+  .App .portfolio .porfolio_content .portfolio_item .details p {
+    font-size: 18px;
+  }
+  .App .portfolio .porfolio_content .portfolio_item .details .used_technologies {
+    font-size: 16px;
+  }
+  .App .portfolio .porfolio_content .portfolio_item .details .links a {
+    padding: 12px 32px;
+    font-size: 20px;
+  }
+  .App .contacts main .contacts_item a {
+    font-size: 18px;
+  }
+  .App .contacts main .contacts_item img {
+    width: 45px;
+  }
+  .section_header {
+    font-size: 30px;
+    margin-bottom: 35px;
   }
 }/*# sourceMappingURL=App.css.map */
