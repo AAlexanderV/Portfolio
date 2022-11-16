@@ -92,6 +92,7 @@
 .App .intro .about .avatar {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 40%;
   padding: 10px;
   overflow: hidden;
@@ -165,6 +166,7 @@
   margin: 20px 10px 5px 40px;
 }
 .App .skills .skills_content .skills_box ul {
+  width: 100%;
   max-width: 900px;
   display: flex;
   flex-direction: row;
@@ -351,7 +353,6 @@
     width: 35%;
   }
   .App .intro .about .avatar img {
-    width: 90%;
     width: 400px;
     height: 400px;
   }
@@ -394,8 +395,10 @@
   .App .intro .header nav a {
     font-size: 20px;
   }
+  .App .intro .about {
+    top: 25%;
+  }
   .App .intro .about .avatar img {
-    width: 95%;
     width: 320px;
     height: 320px;
   }
@@ -410,6 +413,21 @@
   }
   .App .intro .about .about_contentBox .about_text p {
     margin: 13px 0;
+    font-size: 16px;
+  }
+  .App .skills .skills_content .skills_box h2 {
+    font-size: 18px;
+    margin-left: 35px;
+    margin-top: 10px;
+  }
+  .App .skills .skills_content .skills_box ul li {
+    padding: 5px;
+  }
+  .App .skills .skills_content .skills_box ul li img {
+    width: 90px;
+    height: 90px;
+  }
+  .App .skills .skills_content .skills_box ul li p {
     font-size: 16px;
   }
   .App .portfolio .porfolio_content {
@@ -443,5 +461,84 @@
   .section_header {
     font-size: 30px;
     margin-bottom: 35px;
+  }
+}
+@media (max-height: 650px) and (max-width: 1100px) {
+  .App .intro .header nav a {
+    font-size: 18px;
+  }
+  .App .intro .about {
+    top: 25%;
+  }
+  .App .intro .about .avatar {
+    width: 30%;
+  }
+  .App .intro .about .avatar img {
+    width: 260px;
+    height: 260px;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .App .intro .about .about_contentBox {
+    width: 70%;
+    padding-right: 5px;
+  }
+  .App .intro .about .about_contentBox header {
+    font-size: 22px;
+  }
+  .App .intro .about .about_contentBox .about_text {
+    width: 90%;
+  }
+  .App .intro .about .about_contentBox .about_text p {
+    margin: 13px 0;
+    font-size: 14px;
+  }
+  .App .intro::after {
+    bottom: 60px;
+  }
+  .App .skills .skills_content .skills_box h2 {
+    font-size: 16px;
+    margin-left: 30px;
+    margin-top: 5px;
+  }
+  .App .skills .skills_content .skills_box ul {
+    margin-top: 0;
+    padding: 0;
+  }
+  .App .skills .skills_content .skills_box ul li {
+    padding: 0 5px;
+  }
+  .App .skills .skills_content .skills_box ul li img {
+    width: 80px;
+    height: 80px;
+  }
+  .App .skills .skills_content .skills_box ul li p {
+    font-size: 16px;
+  }
+  .App .portfolio .porfolio_content {
+    margin: 10px;
+  }
+  .App .portfolio .porfolio_content .portfolio_item .name header {
+    font-size: 24px;
+  }
+  .App .portfolio .porfolio_content .portfolio_item .name a {
+    max-width: 250px;
+  }
+  .App .portfolio .porfolio_content .portfolio_item .name a img {
+    max-width: 250px;
+  }
+  .App .portfolio .porfolio_content .portfolio_item .details p {
+    font-size: 17px;
+  }
+  .App .portfolio .porfolio_content .portfolio_item .details .used_technologies {
+    font-size: 15px;
+  }
+  .App .portfolio .porfolio_content .portfolio_item .details .links a {
+    padding: 12px 32px;
+    font-size: 20px;
+  }
+  .section_header {
+    font-size: 28px;
+    margin-bottom: 15px;
   }
 }/*# sourceMappingURL=App.css.map */

@@ -5,10 +5,10 @@ export default function Header() {
     const [headerFixed, setHeaderFixed] = useState(false);
 
     function headerHandler() {
-        console.log(window);
+        const innerHeight = window.innerHeight * 0.8;
         if (window.scrollY >= window.innerHeight && !headerFixed) {
             setHeaderFixed(true);
-        } else if (window.scrollY < window.innerHeight && headerFixed) {
+        } else if (window.scrollY < innerHeight && headerFixed) {
             setHeaderFixed(false);
         }
     }
