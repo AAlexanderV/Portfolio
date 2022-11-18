@@ -1011,6 +1011,10 @@ $background_2: rgb(241, 241, 241);
                 }
             }
         }
+        // SKILLS
+        .skills {
+            height: fit-content;
+        }
 
         // CONTACTS
         .contacts {
@@ -1032,6 +1036,7 @@ $background_2: rgb(241, 241, 241);
     }
     .section_header {
         font-size: 25px;
+        margin-top: 30px;
     }
 }
 

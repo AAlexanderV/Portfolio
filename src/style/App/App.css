@@ -833,6 +833,11 @@
   .App .portfolio .porfolio_content .portfolio_item .details .links {
     align-items: center;
   }
+  .App .skills {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
   .App .contacts main .contacts_item {
     margin: 10px 0 15px 0;
   }
@@ -847,6 +852,7 @@
   }
   .section_header {
     font-size: 25px;
+    margin-top: 30px;
   }
 }
 @media (max-height: 750px) and (max-width: 380px) {
