@@ -318,6 +318,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .App .portfolio .porfolio_content .portfolio_item .details p {
   font-weight: 400;
@@ -332,6 +335,9 @@
   color: rgb(117, 117, 117);
 }
 .App .portfolio .porfolio_content .portfolio_item .details .links {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   margin-top: 20px;
 }
 .App .portfolio .porfolio_content .portfolio_item .details .links a {
@@ -745,40 +751,35 @@
   .App .skills .skills_content .skills_box ul li p {
     font-size: 14px;
   }
-  .App .portfolio {
-    padding: 40px 5px;
-  }
-  .App .portfolio .porfolio_content {
-    margin: 0;
-  }
   .App .portfolio .porfolio_content .portfolio_item {
-    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px;
   }
   .App .portfolio .porfolio_content .portfolio_item .name {
-    width: 35%;
-    padding: 5px;
+    width: 100%;
   }
   .App .portfolio .porfolio_content .portfolio_item .name header {
-    font-weight: 500;
-    font-size: 20px;
-    margin: 10px 5px;
+    font-size: 24px;
+  }
+  .App .portfolio .porfolio_content .portfolio_item .name a {
+    width: 90%;
+  }
+  .App .portfolio .porfolio_content .portfolio_item .name a img {
+    width: 100%;
   }
   .App .portfolio .porfolio_content .portfolio_item .details {
-    width: 65%;
+    width: 100%;
   }
   .App .portfolio .porfolio_content .portfolio_item .details p {
-    margin: 16px 10px 16px 5px;
-    font-size: 16px;
+    margin: 14px;
     text-align: justify;
   }
-  .App .portfolio .porfolio_content .portfolio_item .details .used_technologies {
-    font-size: 14px;
-    margin: 0 10px 10px 10px;
-  }
   .App .portfolio .porfolio_content .portfolio_item .details .links {
-    margin-top: 5px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin: 0;
   }
   .App .portfolio .porfolio_content .portfolio_item .details .links a {
     width: 170px;
@@ -790,7 +791,7 @@
     margin-bottom: 30px;
   }
 }
-@media (max-height: 850px) and (max-width: 400px) {
+@media (max-height: 880px) and (max-width: 420px) {
   .App .intro .about .avatar {
     width: 200px;
     height: 200px;
@@ -846,5 +847,38 @@
   }
   .section_header {
     font-size: 25px;
+  }
+}
+@media (max-height: 750px) and (max-width: 380px) {
+  .App .intro .about .avatar {
+    width: 180px;
+    height: 180px;
+  }
+  .App .intro .about .avatar img {
+    width: 160px;
+    height: 160px;
+  }
+  .App .intro .about .about_contentBox header {
+    font-size: 18px;
+    padding-bottom: 3px;
+  }
+  .App .intro .about .about_contentBox .about_text p {
+    font-size: 12px;
+  }
+  .App .skills {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .section_header {
+    margin-top: 30px;
+  }
+}
+@media (max-height: 670px) and (max-width: 310px) {
+  .App .intro .about {
+    top: 100px;
+  }
+  .App .intro .about .avatar {
+    display: none;
   }
 }/*# sourceMappingURL=App.css.map */

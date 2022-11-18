@@ -330,6 +330,7 @@ $background_2: rgb(241, 241, 241);
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
+                    height: fit-content;
 
                     p {
                         font-weight: 400;
@@ -346,6 +347,7 @@ $background_2: rgb(241, 241, 241);
                     }
 
                     .links {
+                        height: fit-content;
                         margin-top: 20px;
                         a {
                             margin: 10px;
@@ -883,8 +885,6 @@ $background_2: rgb(241, 241, 241);
         .skills {
             .skills_content {
                 .skills_box {
-                    h2 {
-                    }
                     ul {
                         justify-content: space-around;
                         margin: 0;
@@ -907,35 +907,35 @@ $background_2: rgb(241, 241, 241);
 
         // PORTFOLIO
         .portfolio {
-            padding: 40px 5px;
             .porfolio_content {
-                margin: 0;
                 .portfolio_item {
-                    width: 100%;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-bottom: 70px;
                     .name {
-                        width: 35%;
-                        padding: 5px;
+                        width: 100%;
                         header {
-                            font-weight: 500;
-                            font-size: 20px;
-                            margin: 10px 5px;
+                            font-size: 24px;
+                        }
+
+                        a {
+                            width: 90%;
+                            img {
+                                width: 100%;
+                            }
                         }
                     }
                     .details {
-                        width: 65%;
+                        width: 100%;
                         p {
-                            margin: 16px 10px 16px 5px;
-                            font-size: 16px;
+                            margin: 14px;
                             text-align: justify;
                         }
-                        .used_technologies {
-                            font-size: 14px;
-                            margin: 0 10px 10px 10px;
-                        }
                         .links {
-                            margin-top: 5px;
                             display: flex;
                             flex-direction: column;
+                            align-items: center;
+                            margin: 0;
                             a {
                                 width: 170px;
                                 text-align: center;
@@ -953,7 +953,7 @@ $background_2: rgb(241, 241, 241);
     }
 }
 
-@media (max-height: 850px) and (max-width: 400px) {
+@media (max-height: 880px) and (max-width: 420px) {
     .App {
         .intro {
             .about {
@@ -1032,5 +1032,54 @@ $background_2: rgb(241, 241, 241);
     }
     .section_header {
         font-size: 25px;
+    }
+}
+
+@media (max-height: 750px) and (max-width: 380px) {
+    .App {
+        .intro {
+            .about {
+                .avatar {
+                    width: 180px;
+                    height: 180px;
+                    img {
+                        width: 160px;
+                        height: 160px;
+                    }
+                }
+                .about_contentBox {
+                    header {
+                        font-size: 18px;
+                        padding-bottom: 3px;
+                    }
+                    .about_text {
+                        p {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+
+        // SKILLS
+        .skills {
+            height: fit-content;
+        }
+    }
+    .section_header {
+        margin-top: 30px;
+    }
+}
+
+@media (max-height: 670px) and (max-width: 310px) {
+    .App {
+        .intro {
+            .about {
+                top: 100px;
+                .avatar {
+                    display: none;
+                }
+            }
+        }
     }
 }
