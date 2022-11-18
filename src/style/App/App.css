@@ -36,6 +36,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  z-index: 100;
 }
 .App .intro .header nav a {
   position: relative;
@@ -66,7 +67,7 @@
 .App .intro .header nav.active {
   display: flex;
   flex-direction: column;
-  margin: 30px 70px 0 0;
+  margin: 30px 70px 15px 0;
 }
 .App .intro .header nav::after {
   content: "";
@@ -136,6 +137,9 @@
   display: none;
 }
 .App .intro :hover.fixed {
+  background-color: #737373;
+}
+.App .intro .active {
   background-color: #737373;
 }
 .App .intro .about {
@@ -228,8 +232,6 @@
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 10px;
-  padding: 10px;
 }
 .App .skills .skills_content .skills_box ul li {
   width: -webkit-fit-content;
@@ -598,7 +600,7 @@
     margin-bottom: 15px;
   }
 }
-@media (max-height: 1200px) and (max-width: 1000px) {
+@media (max-width: 1000px) {
   .App .intro .header nav {
     display: none;
     width: -webkit-fit-content;
@@ -623,14 +625,16 @@
   .App .intro .header .toggle_item {
     display: block;
   }
+}
+@media (max-height: 1400px) and (max-width: 1000px) {
   .App .intro .about {
-    top: 15%;
+    top: 16%;
     flex-direction: column;
     align-items: center;
   }
   .App .intro .about .avatar {
-    width: 310px;
-    height: 310px;
+    width: 320px;
+    height: 320px;
     margin-bottom: 25px;
   }
   .App .intro .about .avatar img {
@@ -643,12 +647,146 @@
     width: 80%;
   }
   .App .intro .about .about_contentBox header {
-    font-size: 25px;
+    font-size: 28px;
+    padding-bottom: 10px;
   }
   .App .intro .about .about_contentBox .about_text {
     width: 100%;
   }
   .App .intro .about .about_contentBox .about_text p {
-    font-size: 17px;
+    font-size: 19px;
+  }
+  .App .portfolio .porfolio_content .portfolio_item .name {
+    width: 40%;
+    padding: 0 10px;
+  }
+  .App .portfolio .porfolio_content .portfolio_item .details {
+    width: 60%;
+  }
+}
+@media (max-height: 1050px) and (max-width: 800px) {
+  .App .intro .about {
+    top: 13%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .App .intro .about .avatar {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+  }
+  .App .intro .about .avatar img {
+    width: 280px;
+    height: 280px;
+  }
+  .App .intro::after {
+    display: none;
+  }
+}
+@media (max-height: 950px) and (max-width: 800px) {
+  .App .intro .about {
+    top: 12%;
+  }
+  .App .intro .about .avatar {
+    width: 260px;
+    height: 260px;
+    margin-bottom: 20px;
+  }
+  .App .intro .about .avatar img {
+    width: 240px;
+    height: 240px;
+  }
+  .App .intro .about .about_contentBox {
+    width: 85%;
+    padding-right: 0;
+  }
+  .App .intro .about .about_contentBox header {
+    font-size: 26px;
+  }
+  .App .intro .about .about_contentBox .about_text p {
+    font-size: 16px;
+  }
+}
+@media (max-height: 915px) and (max-width: 600px) {
+  .App .intro .about {
+    top: 10%;
+  }
+  .App .intro .about .avatar {
+    width: 220px;
+    height: 220px;
+    margin-bottom: 10px;
+  }
+  .App .intro .about .avatar img {
+    width: 200px;
+    height: 200px;
+  }
+  .App .intro .about .about_contentBox {
+    width: 85%;
+  }
+  .App .intro .about .about_contentBox header {
+    font-size: 22px;
+  }
+  .App .intro .about .about_contentBox .about_text p {
+    font-size: 15px;
+  }
+  .App .skills .skills_content .skills_box ul {
+    justify-content: space-around;
+    margin: 0;
+    padding: 10px;
+  }
+  .App .skills .skills_content .skills_box ul li {
+    padding: 0;
+    margin: 10px;
+  }
+  .App .skills .skills_content .skills_box ul li img {
+    width: 80px;
+    height: 80px;
+  }
+  .App .skills .skills_content .skills_box ul li p {
+    font-size: 14px;
+  }
+  .App .portfolio {
+    padding: 40px 5px;
+  }
+  .App .portfolio .porfolio_content {
+    margin: 0;
+  }
+  .App .portfolio .porfolio_content .portfolio_item {
+    width: 100%;
+  }
+  .App .portfolio .porfolio_content .portfolio_item .name {
+    width: 35%;
+    padding: 5px;
+  }
+  .App .portfolio .porfolio_content .portfolio_item .name header {
+    font-weight: 500;
+    font-size: 20px;
+    margin: 10px 5px;
+  }
+  .App .portfolio .porfolio_content .portfolio_item .details {
+    width: 65%;
+  }
+  .App .portfolio .porfolio_content .portfolio_item .details p {
+    margin: 16px 10px 16px 5px;
+    font-size: 16px;
+    text-align: justify;
+  }
+  .App .portfolio .porfolio_content .portfolio_item .details .used_technologies {
+    font-size: 14px;
+    margin: 0 10px 10px 10px;
+  }
+  .App .portfolio .porfolio_content .portfolio_item .details .links {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+  .App .portfolio .porfolio_content .portfolio_item .details .links a {
+    width: 170px;
+    text-align: center;
+    padding: 15px 20px;
+  }
+  .section_header {
+    font-size: 30px;
+    margin-bottom: 30px;
   }
 }/*# sourceMappingURL=App.css.map */

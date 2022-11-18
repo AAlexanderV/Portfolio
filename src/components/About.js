@@ -2,7 +2,10 @@ import avatar from "../images/avatar.jpg";
 
 export default function About() {
     return (
-        <main className="about">
+        <main
+            className="about"
+            id="about"
+        >
             <div className="avatar">
                 <img
                     src={avatar}
@@ -10,12 +13,7 @@ export default function About() {
                 />
             </div>
             <div className="about_contentBox">
-                <header
-                    className="about_header"
-                    id="about"
-                >
-                    ABOUT ME
-                </header>
+                <header className="about_header">ABOUT ME</header>
                 <div className="about_text">
                     <p>
                         Hello, my name is <span>Alexander Asaulov</span>. I am

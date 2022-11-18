@@ -6,35 +6,15 @@ export default function Header() {
     const [burgerMenuPressed, setBurgerMenuPressed] = useState(false);
 
     function headerHandler() {
-        const innerHeight = window.innerHeight * 0.8;
-        if (window.scrollY >= window.innerHeight && !headerFixed) {
+        const fixHeight = window.innerHeight * 0.9;
+        if (window.scrollY >= fixHeight && !headerFixed) {
             setHeaderFixed(true);
-        } else if (window.scrollY < innerHeight && headerFixed) {
+        } else if (window.scrollY < fixHeight && headerFixed) {
             setHeaderFixed(false);
         }
     }
 
     window.addEventListener("scroll", headerHandler);
-
-    // menu_btn.addEventListener("click", function () {
-    //     if (! menu_btn.classList.contains("active")){
-    //         // чтобы сделать актив = крестик
-    //         menu_btn.classList.add("active");
-    //         // присвоить актив для нав_2
-    //         menu_nav.classList.add("active");
-    //         header_slogan.classList.add("hide");
-    //         header.classList.add("red");
-    //         header_logo.classList.add("white");
-    //     }
-    //     else {
-    //         // чтобы убрать актив = три полоски
-    //         menu_btn.classList.remove("active");
-    //         // убрать актив для нав_2
-    //         menu_nav.classList.remove("active");
-    //         header_slogan.classList.remove("hide");
-    //         header.classList.remove("red");
-    //     }
-    // });
 
     function toggleBurgerMenu() {
         if (burgerMenuPressed) {
@@ -50,7 +30,12 @@ export default function Header() {
     }
 
     return (
-        <header className={headerFixed ? "header fixed" : "header"}>
+        <header
+            className={
+                (headerFixed ? "header fixed" : "header") +
+                (burgerMenuPressed ? " active" : "")
+            }
+        >
             <nav className={burgerMenuPressed ? "active" : ""}>
                 <a
                     href="#about"

@@ -31,6 +31,7 @@ $background_2: rgb(241, 241, 241);
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
+                z-index: 100;
                 a {
                     position: relative;
                     margin: 15px;
@@ -61,7 +62,7 @@ $background_2: rgb(241, 241, 241);
             nav.active {
                 display: flex;
                 flex-direction: column;
-                margin: 30px 70px 0 0;
+                margin: 30px 70px 15px 0;
             }
             nav::after {
                 content: "";
@@ -141,6 +142,9 @@ $background_2: rgb(241, 241, 241);
         }
         :hover.fixed {
             background-color: #737373;
+        }
+        .active {
+            background-color: $intro_grey;
         }
 
         .about {
@@ -238,8 +242,7 @@ $background_2: rgb(241, 241, 241);
                     flex-direction: row;
                     justify-content: center;
                     flex-wrap: wrap;
-                    margin: 10px;
-                    padding: 10px;
+                    // padding: 10px;
 
                     li {
                         width: fit-content;
@@ -710,7 +713,7 @@ $background_2: rgb(241, 241, 241);
     }
 }
 
-@media (max-height: 1200px) and (max-width: 1000px) {
+@media (max-width: 1000px) {
     .App {
         //INTRO
         .intro {
@@ -735,13 +738,21 @@ $background_2: rgb(241, 241, 241);
                     display: block;
                 }
             }
+        }
+    }
+}
+
+@media (max-height: 1400px) and (max-width: 1000px) {
+    .App {
+        //INTRO
+        .intro {
             .about {
-                top: 15%;
+                top: 16%;
                 flex-direction: column;
                 align-items: center;
                 .avatar {
-                    width: 310px;
-                    height: 310px;
+                    width: 320px;
+                    height: 320px;
                     margin-bottom: 25px;
                     img {
                         width: 300px;
@@ -753,16 +764,191 @@ $background_2: rgb(241, 241, 241);
                 .about_contentBox {
                     width: 80%;
                     header {
-                        font-size: 25px;
+                        font-size: 28px;
+                        padding-bottom: 10px;
                     }
                     .about_text {
                         width: 100%;
                         p {
-                            font-size: 17px;
+                            font-size: 19px;
                         }
                     }
                 }
             }
         }
+
+        // PORTFOLIO
+        .portfolio {
+            .porfolio_content {
+                .portfolio_item {
+                    .name {
+                        width: 40%;
+                        padding: 0 10px;
+                    }
+                    .details {
+                        width: 60%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-height: 1050px) and (max-width: 800px) {
+    .App {
+        //INTRO
+        .intro {
+            .about {
+                top: 13%;
+                flex-direction: column;
+                align-items: center;
+                .avatar {
+                    width: 300px;
+                    height: 300px;
+                    margin-bottom: 20px;
+                    img {
+                        width: 280px;
+                        height: 280px;
+                    }
+                }
+            }
+        }
+        .intro::after {
+            display: none;
+        }
+    }
+}
+
+@media (max-height: 950px) and (max-width: 800px) {
+    .App {
+        //INTRO
+        .intro {
+            .about {
+                top: 12%;
+                .avatar {
+                    width: 260px;
+                    height: 260px;
+                    margin-bottom: 20px;
+                    img {
+                        width: 240px;
+                        height: 240px;
+                    }
+                }
+                .about_contentBox {
+                    width: 85%;
+                    padding-right: 0;
+                    header {
+                        font-size: 26px;
+                    }
+                    .about_text {
+                        p {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-height: 915px) and (max-width: 600px) {
+    .App {
+        //INTRO
+        .intro {
+            .about {
+                top: 10%;
+                .avatar {
+                    width: 220px;
+                    height: 220px;
+                    margin-bottom: 10px;
+                    img {
+                        width: 200px;
+                        height: 200px;
+                    }
+                }
+                .about_contentBox {
+                    width: 85%;
+                    header {
+                        font-size: 22px;
+                    }
+                    .about_text {
+                        p {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+        // SKILLS
+        .skills {
+            .skills_content {
+                .skills_box {
+                    h2 {
+                    }
+                    ul {
+                        justify-content: space-around;
+                        margin: 0;
+                        padding: 10px;
+                        li {
+                            padding: 0;
+                            margin: 10px;
+                            img {
+                                width: 80px;
+                                height: 80px;
+                            }
+                            p {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // PORTFOLIO
+        .portfolio {
+            padding: 40px 5px;
+            .porfolio_content {
+                margin: 0;
+                .portfolio_item {
+                    width: 100%;
+                    .name {
+                        width: 35%;
+                        padding: 5px;
+                        header {
+                            font-weight: 500;
+                            font-size: 20px;
+                            margin: 10px 5px;
+                        }
+                    }
+                    .details {
+                        width: 65%;
+                        p {
+                            margin: 16px 10px 16px 5px;
+                            font-size: 16px;
+                            text-align: justify;
+                        }
+                        .used_technologies {
+                            font-size: 14px;
+                            margin: 0 10px 10px 10px;
+                        }
+                        .links {
+                            margin-top: 5px;
+                            display: flex;
+                            flex-direction: column;
+                            a {
+                                width: 170px;
+                                text-align: center;
+                                padding: 15px 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .section_header {
+        font-size: 30px;
+        margin-bottom: 30px;
     }
 }
