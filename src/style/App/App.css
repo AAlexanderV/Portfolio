@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .App {
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -23,6 +24,9 @@
   padding: 10px;
   margin-top: 25px;
   transition: all 0.2s linear;
+  /* превратить в крестик,если актив есть*/
+  /* превратить в крестик,если актив есть*/
+  /* Burger menu btn */
 }
 .App .intro .header nav {
   position: relative;
@@ -59,6 +63,11 @@
 .App .intro .header nav a:hover::after {
   display: block;
 }
+.App .intro .header nav.active {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 70px 0 0;
+}
 .App .intro .header nav::after {
   content: "";
   position: absolute;
@@ -70,7 +79,54 @@
   right: 125%;
   z-index: 1;
 }
+.App .intro .header .nav_toggle {
+  display: none;
+  position: absolute;
+  width: 30px;
+  top: 38px;
+  right: 40px;
+  z-index: 3;
+  padding: 8px 0;
+  cursor: pointer;
+}
+.App .intro .header .nav_toggle.active .toggle_item {
+  background: none;
+}
+.App .intro .header .nav_toggle.active .toggle_item::before {
+  transform-origin: left top;
+  transform: rotate(45deg) translateX(-2px);
+  background: #000;
+  transition: transform 0.3s linear;
+}
+.App .intro .header .nav_toggle.active .toggle_item::after {
+  transform-origin: left bottom;
+  transform: rotate(-45deg) translateX(-3px);
+  background: #000;
+  transition: transform 0.3s linear;
+}
+.App .intro .header .toggle_item {
+  /* display: none; */
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  margin: auto;
+}
+.App .intro .header .toggle_item::before,
+.App .intro .header .toggle_item::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+}
+.App .intro .header .toggle_item::before {
+  top: 0;
+}
+.App .intro .header .toggle_item::after {
+  bottom: 0;
+}
 .App .intro .fixed {
+  min-height: 90px;
   position: fixed;
   background-color: #c3c3c3;
   margin-top: 0;
@@ -519,7 +575,7 @@
     margin: 10px;
   }
   .App .portfolio .porfolio_content .portfolio_item .name header {
-    font-size: 24px;
+    font-size: 22px;
   }
   .App .portfolio .porfolio_content .portfolio_item .name a {
     max-width: 250px;
@@ -540,5 +596,59 @@
   .section_header {
     font-size: 28px;
     margin-bottom: 15px;
+  }
+}
+@media (max-height: 1200px) and (max-width: 1000px) {
+  .App .intro .header nav {
+    display: none;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+  }
+  .App .intro .header nav a {
+    margin: 10px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .App .intro .header nav::after {
+    display: none;
+  }
+  .App .intro .header .nav_toggle {
+    display: block;
+  }
+  .App .intro .header .toggle_item {
+    display: block;
+  }
+  .App .intro .about {
+    top: 15%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .App .intro .about .avatar {
+    width: 310px;
+    height: 310px;
+    margin-bottom: 25px;
+  }
+  .App .intro .about .avatar img {
+    width: 300px;
+    height: 300px;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .App .intro .about .about_contentBox {
+    width: 80%;
+  }
+  .App .intro .about .about_contentBox header {
+    font-size: 25px;
+  }
+  .App .intro .about .about_contentBox .about_text {
+    width: 100%;
+  }
+  .App .intro .about .about_contentBox .about_text p {
+    font-size: 17px;
   }
 }/*# sourceMappingURL=App.css.map */

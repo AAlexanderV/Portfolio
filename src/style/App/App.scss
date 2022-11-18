@@ -1,3 +1,4 @@
+$intro_grey: #737373;
 $highlight_yellow: rgb(225, 225, 66);
 $dark_yellow: rgb(151, 151, 83);
 $background_2: rgb(241, 241, 241);
@@ -57,6 +58,11 @@ $background_2: rgb(241, 241, 241);
                     display: block;
                 }
             }
+            nav.active {
+                display: flex;
+                flex-direction: column;
+                margin: 30px 70px 0 0;
+            }
             nav::after {
                 content: "";
                 position: absolute;
@@ -68,8 +74,63 @@ $background_2: rgb(241, 241, 241);
                 right: 125%;
                 z-index: 1;
             }
+
+            // Nav - burger menu button -->
+            .nav_toggle {
+                display: none;
+                position: absolute;
+                width: 30px;
+                top: 38px;
+                right: 40px;
+                z-index: 3;
+                padding: 8px 0;
+                cursor: pointer;
+            }
+            /* превратить в крестик,если актив есть*/
+            .nav_toggle.active .toggle_item {
+                background: none;
+            }
+            .nav_toggle.active .toggle_item::before {
+                transform-origin: left top;
+                transform: rotate(45deg) translateX(-2px);
+                background: #000;
+                transition: transform 0.3s linear;
+            }
+            .nav_toggle.active .toggle_item::after {
+                transform-origin: left bottom;
+                transform: rotate(-45deg) translateX(-3px);
+                background: #000;
+                transition: transform 0.3s linear;
+            }
+            /* превратить в крестик,если актив есть*/
+
+            .toggle_item {
+                /* display: none; */
+                width: 100%;
+                height: 3px;
+                background-color: #fff;
+                margin: auto;
+            }
+
+            .toggle_item::before,
+            .toggle_item::after {
+                content: "";
+                width: 100%;
+                height: 3px;
+                background-color: #fff;
+                position: absolute;
+            }
+
+            .toggle_item::before {
+                top: 0;
+            }
+            .toggle_item::after {
+                bottom: 0;
+            }
+            /* Burger menu btn */
         }
         .fixed {
+            min-height: 90px;
             position: fixed;
             background-color: #c3c3c3;
             margin-top: 0;
@@ -616,7 +677,7 @@ $background_2: rgb(241, 241, 241);
                 .portfolio_item {
                     .name {
                         header {
-                            font-size: 24px;
+                            font-size: 22px;
                         }
                         a {
                             max-width: 250px;
@@ -649,124 +710,59 @@ $background_2: rgb(241, 241, 241);
     }
 }
 
-// @media (max-height: 650px) and (max-width: 1100px) {
-//     .App {
-//         //INTRO
-//         .intro {
-//             .header {
-//                 nav {
-//                     a {
-//                         font-size: 18px;
-//                     }
-//                 }
-//             }
-//             .about {
-//                 top: 25%;
-//                 .avatar {
-//                     width: 30%;
-//                     img {
-//                         width: 260px;
-//                         height: 260px;
-//                         max-width: 100%;
-//                         max-height: 100%;
-//                     }
-//                 }
-//                 .about_contentBox {
-//                     width: 70%;
-//                     padding-right: 5px;
-//                     header {
-//                         font-size: 22px;
-//                     }
-//                     .about_text {
-//                         width: 90%;
-//                         p {
-//                             margin: 13px 0;
-//                             font-size: 14px;
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//         .intro::after {
-//             bottom: 60px;
-//         }
+@media (max-height: 1200px) and (max-width: 1000px) {
+    .App {
+        //INTRO
+        .intro {
+            .header {
+                nav {
+                    display: none;
+                    width: fit-content;
+                    min-width: fit-content;
+                    a {
+                        margin: 10px;
+                        width: fit-content;
+                    }
+                }
+                nav::after {
+                    display: none;
+                }
+                .nav_toggle {
+                    display: block;
+                }
 
-//         // SKILLS
-//         .skills {
-//             .skills_content {
-//                 .skills_box {
-//                     h2 {
-//                         font-size: 16px;
-//                         margin-left: 30px;
-//                         margin-top: 5px;
-//                     }
-//                     ul {
-//                         margin-top: 0;
-//                         padding: 0;
-//                         li {
-//                             padding: 0 5px;
-//                             img {
-//                                 width: 80px;
-//                                 height: 80px;
-//                             }
-//                             p {
-//                                 font-size: 16px;
-//                             }
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-
-//         // PORTFOLIO
-//         .portfolio {
-//             .porfolio_content {
-//                 margin: 10px;
-//                 .portfolio_item {
-//                     .name {
-//                         header {
-//                             font-size: 24px;
-//                         }
-//                         a {
-//                             max-width: 250px;
-//                             img {
-//                                 max-width: 250px;
-//                             }
-//                         }
-//                     }
-//                     .details {
-//                         p {
-//                             font-size: 17px;
-//                         }
-//                         .used_technologies {
-//                             font-size: 15px;
-//                         }
-//                         .links {
-//                             a {
-//                                 padding: 12px 32px;
-//                                 font-size: 20px;
-//                             }
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//         // CONTACTS
-//         .contacts {
-//             main {
-//                 .contacts_item {
-//                     a {
-//                         font-size: 18px;
-//                     }
-//                     img {
-//                         width: 45px;
-//                     }
-//                 }
-//             }
-//         }
-//     }
-//     .section_header {
-//         font-size: 28px;
-//         margin-bottom: 15px;
-//     }
-// }
+                .toggle_item {
+                    display: block;
+                }
+            }
+            .about {
+                top: 15%;
+                flex-direction: column;
+                align-items: center;
+                .avatar {
+                    width: 310px;
+                    height: 310px;
+                    margin-bottom: 25px;
+                    img {
+                        width: 300px;
+                        height: 300px;
+                        max-width: 100%;
+                        max-height: 100%;
+                    }
+                }
+                .about_contentBox {
+                    width: 80%;
+                    header {
+                        font-size: 25px;
+                    }
+                    .about_text {
+                        width: 100%;
+                        p {
+                            font-size: 17px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
