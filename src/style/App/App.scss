@@ -952,3 +952,85 @@ $background_2: rgb(241, 241, 241);
         margin-bottom: 30px;
     }
 }
+
+@media (max-height: 850px) and (max-width: 400px) {
+    .App {
+        .intro {
+            .about {
+                .avatar {
+                    width: 200px;
+                    height: 200px;
+                    margin-bottom: 5px;
+                    img {
+                        width: 180px;
+                        height: 180px;
+                    }
+                }
+                .about_contentBox {
+                    header {
+                        font-size: 20px;
+                        padding-bottom: 5px;
+                    }
+                    .about_text {
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+
+        // PORTFOLIO
+        .portfolio {
+            .porfolio_content {
+                .portfolio_item {
+                    flex-direction: column;
+                    align-items: center;
+                    .name {
+                        width: 100%;
+                        header {
+                            font-size: 24px;
+                        }
+
+                        a {
+                            width: 90%;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                    .details {
+                        width: 100%;
+                        p {
+                            margin: 14px;
+                        }
+                        .links {
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+        }
+
+        // CONTACTS
+        .contacts {
+            main {
+                .contacts_item {
+                    margin: 10px 0 15px 0;
+                    a {
+                        font-size: 15px;
+                    }
+                    img {
+                        width: 35px;
+                    }
+                    .about {
+                        top: 8%;
+                    }
+                }
+            }
+        }
+    }
+    .section_header {
+        font-size: 25px;
+    }
+}
