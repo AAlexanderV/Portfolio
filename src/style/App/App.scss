@@ -288,6 +288,7 @@ $background_2: rgb(241, 241, 241);
             .portfolio_item {
                 display: flex;
                 flex-direction: row;
+                align-items: center;
                 flex-wrap: wrap;
                 width: 95%;
                 max-width: 1300px;

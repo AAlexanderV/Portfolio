@@ -1,6 +1,5 @@
 @charset "UTF-8";
 .App {
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   width: 100%;
@@ -12,7 +11,6 @@
   background-color: #737373;
   width: 100%;
   height: 100vh;
-  min-height: -webkit-fit-content;
   min-height: -moz-fit-content;
   min-height: fit-content;
 }
@@ -217,7 +215,6 @@
 .App .skills .skills_content .skills_box {
   display: flex;
   flex-direction: column;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -234,7 +231,6 @@
   flex-wrap: wrap;
 }
 .App .skills .skills_content .skills_box ul li {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   list-style-type: none;
@@ -252,7 +248,6 @@
 }
 .App .portfolio {
   width: 100%;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   background-color: rgb(241, 241, 241);
@@ -265,7 +260,6 @@
 }
 .App .portfolio .porfolio_content {
   width: 100%;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   margin: 15px;
@@ -276,17 +270,16 @@
 .App .portfolio .porfolio_content .portfolio_item {
   display: flex;
   flex-direction: row;
+  align-items: center;
   flex-wrap: wrap;
   width: 95%;
   max-width: 1300px;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   margin-bottom: 50px;
 }
 .App .portfolio .porfolio_content .portfolio_item .name {
   width: 35%;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   display: flex;
@@ -318,7 +311,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
@@ -335,7 +327,6 @@
   color: rgb(117, 117, 117);
 }
 .App .portfolio .porfolio_content .portfolio_item .details .links {
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   margin-top: 20px;
@@ -368,7 +359,6 @@
 }
 .App .contacts {
   width: 100%;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   background-color: rgb(241, 241, 241);
@@ -609,16 +599,13 @@
 @media (max-width: 1000px) {
   .App .intro .header nav {
     display: none;
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    min-width: -webkit-fit-content;
     min-width: -moz-fit-content;
     min-width: fit-content;
   }
   .App .intro .header nav a {
     margin: 10px;
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
   }
@@ -834,7 +821,6 @@
     align-items: center;
   }
   .App .skills {
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
   }
@@ -872,7 +858,6 @@
     font-size: 12px;
   }
   .App .skills {
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
   }

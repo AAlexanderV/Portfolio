@@ -1,3 +1,4 @@
+import evolutionImg from "../images/portfolio/bact.png";
 import deliveryAppImg from "../images/portfolio/delivery_app.png";
 import forecastAppImg from "../images/portfolio/weather_forecast.png";
 import mfinanceImg from "../images/portfolio/mfinance.png";
@@ -14,6 +15,50 @@ export default function Portfolio() {
             <header className="section_header">Portfolio</header>
 
             <main className="porfolio_content">
+                <div className="portfolio_item">
+                    <div className="name">
+                        <header>Evolution simulator</header>
+                        <a
+                            href="https://bact-simulator.netlify.app/"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <img
+                                src={evolutionImg}
+                                alt="Evolution simulator"
+                            />
+                        </a>
+                    </div>
+                    <div className="details">
+                        <p>
+                            An app which simulates the lifecycle of Bacts, where
+                            you can place as much food and Bacts as you want. It
+                            has a real-time statistics module, where you can see
+                            how they evolve.
+                        </p>
+                        <div className="used_technologies">
+                            React, Redux, CSS
+                        </div>
+                        <div className="links">
+                            <a
+                                className="git_link"
+                                href="https://github.com/AAlexanderV/Bacteria"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                GitHub
+                            </a>
+                            <a
+                                className="net_link"
+                                href="https://bact-simulator.netlify.app/"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                Live site
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 <div className="portfolio_item">
                     <div className="name">
                         <header>Delivery app</header>
