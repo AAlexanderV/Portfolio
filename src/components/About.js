@@ -37,10 +37,10 @@ export default function About() {
                         similar to C (comparing with python and html/css), but
                         much simpler and more functional. As a result,{" "}
                         <span>
-                            I really liked web development and decided to stay
-                            in this area
+                            I really liked web development and decided stay in
+                            this technology stack
                         </span>
-                        , to which I have dedicated myself for the last 9
+                        , to which I have dedicated myself for the past 10
                         months.
                     </p>
                 </div>
