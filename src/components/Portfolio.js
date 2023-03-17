@@ -260,7 +260,7 @@ export default function Portfolio() {
           </div>
         </div>
 
-        <div className="portfolio_item">
+        {/* <div className="portfolio_item">
           <div className="name">
             <header>Shipping company web-site</header>
             <a
@@ -299,7 +299,7 @@ export default function Portfolio() {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="portfolio_item">
           <div className="name">
