@@ -5,7 +5,7 @@ import forecastAppImg from "../images/portfolio/weather_forecast.png";
 import mfinanceImg from "../images/portfolio/mfinance.png";
 import tic_tac_toeImg from "../images/portfolio/tic-tac-toe.png";
 import kopfflexImg from "../images/portfolio/first_web_site.png";
-import shippingImg from "../images/portfolio/shipping.png";
+// import shippingImg from "../images/portfolio/shipping.png";
 
 export default function Portfolio() {
   return (
