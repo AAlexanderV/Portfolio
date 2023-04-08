@@ -264,7 +264,7 @@ export default function Portfolio() {
           <div className="name">
             <header>Shipping company web-site</header>
             <a
-              href="https://github.com/AAlexanderV/just-bulk/"
+              href="https://just-bulk-dmcc.netlify.app/"
               target="_blank"
               rel="noreferrer"
             >
@@ -280,7 +280,7 @@ export default function Portfolio() {
             <div className="links">
               <a
                 className="git_link"
-                href="https://github.com/AAlexanderV/2nd-simpleWebsite/"
+                href="https://github.com/AAlexanderV/just-bulk/"
                 target="_blank"
                 rel="noreferrer"
               >
