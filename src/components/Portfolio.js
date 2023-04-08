@@ -5,7 +5,7 @@ import forecastAppImg from "../images/portfolio/weather_forecast.png";
 import mfinanceImg from "../images/portfolio/mfinance.png";
 import tic_tac_toeImg from "../images/portfolio/tic-tac-toe.png";
 import kopfflexImg from "../images/portfolio/first_web_site.png";
-// import shippingImg from "../images/portfolio/shipping.png";
+import shippingImg from "../images/portfolio/jb.png";
 
 export default function Portfolio() {
   return (
@@ -260,11 +260,11 @@ export default function Portfolio() {
           </div>
         </div>
 
-        {/* <div className="portfolio_item">
+        <div className="portfolio_item">
           <div className="name">
             <header>Shipping company web-site</header>
             <a
-              href="https://aalexanderv.github.io/2nd-simpleWebsite/"
+              href="https://github.com/AAlexanderV/just-bulk/"
               target="_blank"
               rel="noreferrer"
             >
@@ -275,10 +275,7 @@ export default function Portfolio() {
             </a>
           </div>
           <div className="details">
-            <p>
-              Here I was trying to learn SCSS and it may also be considered as my 2-nd simple
-              web-site.
-            </p>
+            <p>A simple web-site of a shipping company.</p>
             <div className="used_technologies">HTML, SCSS, JavaScript</div>
             <div className="links">
               <a
@@ -291,7 +288,7 @@ export default function Portfolio() {
               </a>
               <a
                 className="net_link"
-                href="https://aalexanderv.github.io/2nd-simpleWebsite/"
+                href="https://just-bulk-dmcc.netlify.app/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -299,7 +296,7 @@ export default function Portfolio() {
               </a>
             </div>
           </div>
-        </div> */}
+        </div>
 
         <div className="portfolio_item">
           <div className="name">
